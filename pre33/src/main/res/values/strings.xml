@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Android13Snippet-pre33</string>
+
+    <!-- notifications -->
+    <string name="notification_channel_name">Notification Channel</string>
+    <string name="notification_channel_description">Channel description</string>
+    <string name="notification_reply">Reply Text. Refresh to check</string>
+    <string name="notification_title">My Notification</string>
+    <string name="notification_text">Notification text</string>
+
+    <!-- privacy screen -->
+    <string name="privacy_grant_permission">Grant notification permission</string>
+    <string name="privacy_revoke_permission">Revoke notification permission</string>
+    <string name="privacy_send_notification">Send Notification</string>
+
+    <!-- Screen labels -->
+    <string name="label_privacy">Privacy</string>
+</resources>

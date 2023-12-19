@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Android13Snippet-post33</string>
+
+    <!-- Button labels -->
+    <string name="button_go_next">Go next</string>
+
+    <!-- notifications -->
+    <string name="notification_channel_name">Notification Channel</string>
+    <string name="notification_channel_description">Channel description</string>
+    <string name="notification_reply">Reply Text. Refresh to check</string>
+    <string name="notification_title">My Notification</string>
+    <string name="notification_text">Notification text</string>
+
+    <!-- performance screen -->
+    <string name="performance_check_active_apps">Check your task manager. It should contain the list of active apps, which contains all applications with active foreground services</string>
+    <string name="performance_prefetch">Prefetch Job Result</string>
+
+    <!-- privacy screen -->
+    <string name="privacy_clip_data_copy">Copy text from here</string>
+    <string name="privacy_clip_data_copy_button">Copy</string>
+    <string name="privacy_clip_data_hint_hidden">Text should be hidden</string>
+    <string name="privacy_clip_data_hint_visible">Text should be visible</string>
+    <string name="privacy_clip_data_paste">Paste text here</string>
+    <string name="privacy_grant_permission">Grant notification permission</string>
+    <string name="privacy_revoke_hint">Reboot an app after revoking</string>
+    <string name="privacy_revoke_permission">Revoke notification permission</string>
+    <string name="privacy_send_notification">Send Notification</string>
+
+    <!-- screen labels -->
+    <string name="label_performance">Performance</string>
+    <string name="label_privacy">Privacy</string>
+    <string name="label_speech">Speech</string>
+</resources>
