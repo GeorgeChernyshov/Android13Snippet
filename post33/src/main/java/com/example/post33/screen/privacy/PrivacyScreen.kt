@@ -66,6 +66,8 @@ fun NotificationPermissionBlock(modifier: Modifier = Modifier) {
 
     Column(modifier) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            Text(stringResource(R.string.privacy_notification_permission_hint))
+
             Button(onClick = { 
                 permissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS) 
             }) {

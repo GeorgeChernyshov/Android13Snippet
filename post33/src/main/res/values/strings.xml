@@ -14,16 +14,18 @@
     <!-- performance screen -->
     <string name="performance_check_active_apps">Check your task manager. It should contain the list of active apps, which contains all applications with active foreground services. If you dont see any, press the button below to start foreground service</string>
     <string name="performance_prefetch">Prefetch Job Result</string>
+    <string name="performance_prefetch_description">Prefetch Jobs now try to estimate when the app will be opened next time</string>
     <string name="performance_start_service">Start Service</string>
     <string name="performance_stop_service">Stop Service</string>"
 
     <!-- privacy screen -->
     <string name="privacy_clip_data_copy">Copy text from here</string>
     <string name="privacy_clip_data_copy_button">Copy</string>
-    <string name="privacy_clip_data_hint_hidden">Text should be hidden</string>
+    <string name="privacy_clip_data_hint_hidden">Text should be hidden in the clipboard content preview, if your phone supports it</string>
     <string name="privacy_clip_data_hint_visible">Text should be visible</string>
     <string name="privacy_clip_data_paste">Paste text here</string>
     <string name="privacy_grant_permission">Grant notification permission</string>
+    <string name="privacy_notification_permission_hint">Android 13 introduced a permission for sending notifications</string>
     <string name="privacy_revoke_hint">Reboot an app after revoking</string>
     <string name="privacy_revoke_permission">Revoke notification permission</string>
     <string name="privacy_send_notification">Send Notification</string>

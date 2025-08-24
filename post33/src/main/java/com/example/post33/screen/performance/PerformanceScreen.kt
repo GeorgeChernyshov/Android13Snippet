@@ -156,11 +156,12 @@ fun JobResultBlock(
     result: String?
 ) {
     Column(modifier) {
-        Text(text = stringResource(id = R.string.performance_prefetch))
-
-        if (result != null) {
-            Text(text = result)
-        }
+        Text(text = stringResource(id = R.string.performance_prefetch_description))
+//        Text(text = stringResource(id = R.string.performance_prefetch))
+//
+//        if (result != null) {
+//            Text(text = result)
+//        }
     }
 }
 
