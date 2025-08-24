@@ -12,8 +12,10 @@
     <string name="notification_text">Notification text</string>
 
     <!-- performance screen -->
-    <string name="performance_check_active_apps">Check your task manager. It should contain the list of active apps, which contains all applications with active foreground services</string>
+    <string name="performance_check_active_apps">Check your task manager. It should contain the list of active apps, which contains all applications with active foreground services. If you dont see any, press the button below to start foreground service</string>
     <string name="performance_prefetch">Prefetch Job Result</string>
+    <string name="performance_start_service">Start Service</string>
+    <string name="performance_stop_service">Stop Service</string>"
 
     <!-- privacy screen -->
     <string name="privacy_clip_data_copy">Copy text from here</string>

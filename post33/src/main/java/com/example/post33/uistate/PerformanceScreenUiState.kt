@@ -1,9 +1,15 @@
 package com.example.post33.uistate
 
 data class PerformanceScreenUiState(
-    val jobResult: String?
+    val serviceActive: Boolean,
+    val jobResult: String?,
+    val isServiceBound: Boolean
 ) {
     companion object {
-        val DEFAULT = PerformanceScreenUiState(null)
+        val DEFAULT = PerformanceScreenUiState(
+            serviceActive = false,
+            jobResult = null,
+            isServiceBound = false
+        )
     }
 }
