@@ -90,23 +90,21 @@ fun PerformanceScreen(
                     .padding(it)
                     .padding(16.dp)
             ) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                    TaskManagerBlock(
-                        serviceActive = state.value.serviceActive,
-                        onStartServiceClicked = {
-                            tryStartSimpleForegroundService(
-                                context = context,
-                                isServiceBound = state.value.isServiceBound,
-                                setServiceBound = { viewModel.setServiceBound(it) },
-                                serviceConnection = serviceConnection,
-                                requestPermissionLauncher = permissionRequestLauncher
-                            )
-                        },
-                        onStopServiceClicked = {
-                            stopSimpleForegroundService(context)
-                        }
-                    )
-                }
+                TaskManagerBlock(
+                    serviceActive = state.value.serviceActive,
+                    onStartServiceClicked = {
+                        tryStartSimpleForegroundService(
+                            context = context,
+                            isServiceBound = state.value.isServiceBound,
+                            setServiceBound = { viewModel.setServiceBound(it) },
+                            serviceConnection = serviceConnection,
+                            requestPermissionLauncher = permissionRequestLauncher
+                        )
+                    },
+                    onStopServiceClicked = {
+                        stopSimpleForegroundService(context)
+                    }
+                )
 
                 JobResultBlock(
                     modifier = Modifier.padding(top = 16.dp),
@@ -148,6 +146,12 @@ fun TaskManagerBlock(
             }
         }
     }
+
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        Text(stringResource(
+            id = R.string.performance_service_visibility_hint)
+        )
+    }
 }
 
 @Composable
@@ -185,7 +189,6 @@ fun JobResultBlockPreview() {
     }
 }
 
-@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 fun tryStartSimpleForegroundService(
     context: Context,
     isServiceBound: Boolean,
@@ -194,7 +197,6 @@ fun tryStartSimpleForegroundService(
     requestPermissionLauncher: ActivityResultLauncher<Array<String>>
 ) {
     val requiredPermissions = listOf(
-        android.Manifest.permission.POST_NOTIFICATIONS,
         android.Manifest.permission.FOREGROUND_SERVICE
     )
 

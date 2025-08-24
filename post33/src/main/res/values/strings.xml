@@ -15,6 +15,7 @@
     <string name="performance_check_active_apps">Check your task manager. It should contain the list of active apps, which contains all applications with active foreground services. If you dont see any, press the button below to start foreground service</string>
     <string name="performance_prefetch">Prefetch Job Result</string>
     <string name="performance_prefetch_description">Prefetch Jobs now try to estimate when the app will be opened next time</string>
+    <string name="performance_service_visibility_hint">If you don\'t grant notification permission to the foreground service, it will start without showing the notification, just like background service. However, it will still be visible in the task manager.</string>
     <string name="performance_start_service">Start Service</string>
     <string name="performance_stop_service">Stop Service</string>"
 

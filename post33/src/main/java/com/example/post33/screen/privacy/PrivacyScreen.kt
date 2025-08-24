@@ -11,6 +11,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Button
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
@@ -37,20 +38,27 @@ fun PrivacyScreen(onNextClicked: () -> Unit) {
     Scaffold(
         topBar = { AppBar(name = stringResource(id = Screen.Privacy.resourceId)) },
         content = {
-            Column(
+            LazyColumn(
                 modifier = Modifier
                     .fillMaxSize()
                     .padding(it)
                     .padding(16.dp)
             ) {
-                NotificationPermissionBlock()
-                ClipDataBlock(Modifier.padding(top = 16.dp))
+                item {
+                    NotificationPermissionBlock()
+                }
 
-                Button(
-                    modifier = Modifier.padding(top = 16.dp),
-                    onClick = { onNextClicked.invoke() }
-                ) {
-                    Text(text = stringResource(id = R.string.button_go_next))
+                item {
+                    ClipDataBlock(Modifier.padding(top = 16.dp))
+                }
+
+                item {
+                    Button(
+                        modifier = Modifier.padding(top = 16.dp),
+                        onClick = { onNextClicked.invoke() }
+                    ) {
+                        Text(text = stringResource(id = R.string.button_go_next))
+                    }
                 }
             }
         }
