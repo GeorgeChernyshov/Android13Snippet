@@ -15,6 +15,7 @@ import com.example.post33.screen.performance.PerformanceScreen
 import com.example.post33.screen.performance.PrefetchJobService
 import com.example.post33.screen.privacy.PrivacyScreen
 import com.example.post33.screen.speech.SpeechScreen
+import com.example.post33.screen.wifipermission.WiFiPermissionScreen
 import com.example.post33.theme.Android13SnippetTheme
 
 class MainActivity : ComponentActivity() {
@@ -53,12 +54,16 @@ fun App() {
 
             composable(Screen.Privacy.route) {
                 PrivacyScreen {
-                    navController.navigate(Screen.Speech.route)
+                    navController.navigate(Screen.WifiPermission.route)
                 }
             }
 
             composable(Screen.Speech.route) {
                 SpeechScreen()
+            }
+
+            composable(Screen.WifiPermission.route) {
+                WiFiPermissionScreen()
             }
         }
     }

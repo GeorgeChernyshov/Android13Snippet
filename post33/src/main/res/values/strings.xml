@@ -31,8 +31,19 @@
     <string name="privacy_revoke_permission">Revoke notification permission</string>
     <string name="privacy_send_notification">Send Notification</string>
 
+    <!-- wi-fi permission -->
+    <string name="wifi_permission_devices_title">Discovered devices:</string>
+    <string name="wifi_permission_devices_unknown">I don\'t know, permission is not granted</string>
+    <string name="wifi_permission_hint_new">In Android 13, you need to grant a separate permission for locating nearby devices</string>
+    <string name="wifi_permission_hint_old">Before Android 13, you only need to grant location permission and this gives you access to nearby devices</string>
+    <string name="wifi_permission_location_title">Your location</string>
+    <string name="wifi_permission_location_unknown">I don\'t know, permission is not granted</string>
+    <string name="wifi_permission_request_location">Request Location Permission</string>
+    <string name="wifi_permission_request_nearby_devices">Request Nearby Devices Permission</string>
+
     <!-- screen labels -->
     <string name="label_performance">Performance</string>
     <string name="label_privacy">Privacy</string>
     <string name="label_speech">Speech</string>
+    <string name="label_wifi_permission">Wi-Fi Permission</string>
 </resources>
